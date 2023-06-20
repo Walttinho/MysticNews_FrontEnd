@@ -1,3 +1,8 @@
+import { Navbar } from "../../components/Navbar/Navbar";
 export default function Home() {
-  return <h1>Pagina Home Definida</h1>;
+  return (
+    <section>
+      <Navbar />
+    </section>
+  );
 }
