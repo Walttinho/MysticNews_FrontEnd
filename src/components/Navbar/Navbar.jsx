@@ -1,16 +1,19 @@
 import logo from "../images/LogoMN.png";
-import "./Navbar.css";
+import { Button, ImageLogo, InputSpace, Nav } from "./NavbarStyled";
+
+
 export function Navbar() {
   return (
     <>
-      <nav>
-        <div className="input-search-space">
+      <Nav>
+        <InputSpace>
           <i class="bi bi-search"></i>
           <input type="text" placeholder="Pesquise um titulo" />
-        </div>
-        <img src={logo} alt="Logo Mystic News" />
-        <button>Entrar</button>
-      </nav>
+        </InputSpace>
+        <ImageLogo src={logo} alt="Logo Mystic News" />
+        <Button>Entrar</Button>
+      </Nav>
     </>
   );
 }
+
