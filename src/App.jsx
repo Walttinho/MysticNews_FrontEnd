@@ -1,4 +1,5 @@
 import './App.css'
+import { GlobalStyled } from './GlobalStyled'
 import Home from './Pages/Home/Home'
 
 function App() {
@@ -6,7 +7,10 @@ function App() {
   
   return (
     //html with javascript
+   <>
+   <GlobalStyled/>
    <Home/>
+   </>
   )
 }
 
